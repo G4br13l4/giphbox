@@ -3,7 +3,7 @@
 }
 
 
-header > video{
+video{
   width: 100%;
 }
 
@@ -17,3 +17,5 @@ header > video{
   display: flex;
   align-items: center;
 }
+
+/* Gifs */
