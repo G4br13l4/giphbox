@@ -24,18 +24,18 @@ class App extends Component {
     .then(results => {
       return results.json();
     }).then(data =>{
-      let trendyGifs = data.data.map(function(gif) {
+      this.showGifs(data);
+    })
+  }
+
+  showGifs(data){
+    let gifs = data.data.map(function(gif) {
         return (
           <GifM 
             link={gif.images.original.mp4}
           />
         );
-      });
-      this.showGifs(trendyGifs);
-    })
-  }
-
-  showGifs(gifs){
+    });
     this.setState({show:gifs});
   }
 

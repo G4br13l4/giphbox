@@ -7,7 +7,8 @@ class GifM extends Component {
         <video 
             className="gif"
             autoPlay="true" 
-            loop="true" 
+            loop="true"
+            muted="true"
             src={this.props.link}
         />
       
