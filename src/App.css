@@ -1,0 +1,19 @@
+*{
+  background: #000000;
+}
+
+
+header > video{
+  width: 100%;
+}
+
+.h-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+#search-bar{
+  display: flex;
+  align-items: center;
+}
