@@ -4,7 +4,7 @@ import {Col} from 'react-bootstrap';
 class GifM extends Component {
     render() {
     return (
-        <Col md={2}>
+        <Col md={2} xs={6}>
             <video 
                 className="gif"
                 autoPlay="" 
