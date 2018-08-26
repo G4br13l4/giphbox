@@ -29,7 +29,10 @@ class App extends Component {
   }
 
   showGifs(data){
-    let gifs = data.data.map(function(gif) {
+
+    let gifs = data.data.map(function(gif,index) {
+        
+        if(index)
         return (
           <GifM 
             link={gif.images.original.mp4}
@@ -42,7 +45,7 @@ class App extends Component {
   render() {
     return (
       <Grid fluid>
-        <Row className="h-center">
+        <Row className="h-center navbar">
           <Col md={2}>
             <header>
               <video 
@@ -54,15 +57,159 @@ class App extends Component {
               <h2>The Giphy Box</h2>
             </header>
           </Col>
-          <Col md={8} id="search-bar">
-            <SearchBar showGifs={this.showGifs}/>
-          </Col>
+          <SearchBar showGifs={this.showGifs}/>
         </Row>
-
-        <Row>
-          <Col md={12} id="gif-container">
+        <Row className="h-center">
+          <Col md={10}>
+            <Row id="gif-container">
             {this.state.show}
-          </Col>
+            </Row>
+          </Col>  
+        
+          
+        
+           
+            {/* <div className="roww">
+              <div className="column">
+                <div className="video-box">
+                  <video 
+                    autoPlay="true" 
+                    loop="true" 
+                    src="https://media.giphy.com/media/2dQ3FMaMFccpi/giphy.mp4"
+                    alt="logo" 
+                  /> 
+                </div> 
+                <div className="video-box">
+                  <video 
+                    autoPlay="true" 
+                    loop="true" 
+                    src="https://media.giphy.com/media/26FeUQtvzuhdfxOE0/giphy.mp4"
+                    alt="logo" 
+                  />
+                </div> 
+                <div className="video-box">
+                  <video 
+                    autoPlay="true" 
+                    loop="true" 
+                    src="https://media.giphy.com/media/26FeUQtvzuhdfxOE0/giphy.mp4"
+                    alt="logo" 
+                  /> 
+                </div>
+                <div className="video-box">
+                  <video 
+                    autoPlay="true" 
+                    loop="true" 
+                    src="https://media.giphy.com/media/26FeUQtvzuhdfxOE0/giphy.mp4"
+                    alt="logo" 
+                  />
+                </div>  
+              </div>
+              <div className="column">
+                <div className="video-box">
+                  <video 
+                    autoPlay="true" 
+                    loop="true" 
+                    src="https://media.giphy.com/media/2dQ3FMaMFccpi/giphy.mp4"
+                    alt="logo" 
+                  /> 
+                </div> 
+                <div className="video-box">
+                  <video 
+                    autoPlay="true" 
+                    loop="true" 
+                    src="https://media.giphy.com/media/26FeUQtvzuhdfxOE0/giphy.mp4"
+                    alt="logo" 
+                  />
+                </div> 
+                <div className="video-box">
+                  <video 
+                    autoPlay="true" 
+                    loop="true" 
+                    src="https://media.giphy.com/media/26FeUQtvzuhdfxOE0/giphy.mp4"
+                    alt="logo" 
+                  /> 
+                </div>
+                <div className="video-box">
+                  <video 
+                    autoPlay="true" 
+                    loop="true" 
+                    src="https://media.giphy.com/media/26FeUQtvzuhdfxOE0/giphy.mp4"
+                    alt="logo" 
+                  />
+                </div>  
+              </div>
+              <div className="column">
+                <div className="video-box">
+                  <video 
+                    autoPlay="true" 
+                    loop="true" 
+                    src="https://media.giphy.com/media/2dQ3FMaMFccpi/giphy.mp4"
+                    alt="logo" 
+                  /> 
+                </div> 
+                <div className="video-box">
+                  <video 
+                    autoPlay="true" 
+                    loop="true" 
+                    src="https://media.giphy.com/media/26FeUQtvzuhdfxOE0/giphy.mp4"
+                    alt="logo" 
+                  />
+                </div> 
+                <div className="video-box">
+                  <video 
+                    autoPlay="true" 
+                    loop="true" 
+                    src="https://media.giphy.com/media/26FeUQtvzuhdfxOE0/giphy.mp4"
+                    alt="logo" 
+                  /> 
+                </div>
+                <div className="video-box">
+                  <video 
+                    autoPlay="true" 
+                    loop="true" 
+                    src="https://media.giphy.com/media/26FeUQtvzuhdfxOE0/giphy.mp4"
+                    alt="logo" 
+                  />
+                </div>  
+              </div>
+              <div className="column">
+                <div className="video-box">
+                  <video 
+                    autoPlay="true" 
+                    loop="true" 
+                    src="https://media.giphy.com/media/2dQ3FMaMFccpi/giphy.mp4"
+                    alt="logo" 
+                  /> 
+                </div> 
+                <div className="video-box">
+                  <video 
+                    autoPlay="true" 
+                    loop="true" 
+                    src="https://media.giphy.com/media/26FeUQtvzuhdfxOE0/giphy.mp4"
+                    alt="logo" 
+                  />
+                </div> 
+                <div className="video-box">
+                  <video 
+                    autoPlay="true" 
+                    loop="true" 
+                    src="https://media.giphy.com/media/26FeUQtvzuhdfxOE0/giphy.mp4"
+                    alt="logo" 
+                  /> 
+                </div>
+                <div className="video-box">
+                  <video 
+                    autoPlay="true" 
+                    loop="true" 
+                    src="https://media.giphy.com/media/26FeUQtvzuhdfxOE0/giphy.mp4"
+                    alt="logo" 
+                  />
+                </div>  
+              </div> 
+            </div>
+        </div>  
+            
+          </Col> */}           
         </Row>
       </Grid>
     );

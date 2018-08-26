@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import GifM from './GifM';
+import {Col, FormGroup, FormControl, Button} from 'react-bootstrap';
 
 class SearchBar extends Component {
     constructor(props) {
@@ -30,10 +31,18 @@ class SearchBar extends Component {
 
     render() {
     return (
-        <form action="" method="">
-            <input type="text" name="search" placeholder="Write something" onChange={this.handleChange}/>
-            <input type="submit" value="Search" onClick={this.handleSubmit}/>
-        </form>
+        <Col md={8} className="prueba">
+            <form>
+                <FormGroup>
+                    <FormControl type="text" placeholder="Write some" />
+                </FormGroup>
+                <Button type="submit">Submit</Button>
+            </form>
+        </Col>
+        // <form>
+        //     <input id="search-bar" type="text" name="search" placeholder="Write something" onChange={this.handleChange}/>
+        //     <input type="submit" value="Search" onClick={this.handleSubmit}/>
+        // </form>
     );
   }
 }
