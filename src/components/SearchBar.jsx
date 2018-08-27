@@ -25,7 +25,7 @@ class SearchBar extends Component {
     handleSubmit(e){
         e.preventDefault(); 
         let words= this.state.words;
-        fetch(`http://api.giphy.com/v1/gifs/search?q=${words}&api_key=IGrXf3RUkTT4EHEN741Udg8qL76ulftv`)
+        fetch(`https://api.giphy.com/v1/gifs/search?q=${words}&api_key=IGrXf3RUkTT4EHEN741Udg8qL76ulftv`)
         .then(results => {
         return results.json();
         }).then(data =>{
@@ -36,7 +36,7 @@ class SearchBar extends Component {
 
     render() {
     return (
-        <Col md={8}>
+        <Col md={7} id="search-bar">
             <form>
                 <FormGroup>
                     <FormControl value={this.state.words} onChange={this.handleChange} type="text" placeholder="Write something" />

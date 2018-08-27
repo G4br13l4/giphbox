@@ -4,14 +4,15 @@ import {Col} from 'react-bootstrap';
 class GifM extends Component {
     render() {
     return (
-        <Col md={2} xs={6}>
-            <video 
-                className="gif"
-                autoPlay="" 
-                loop="true"
-                muted="true"
-                src={this.props.link}
-            />
+        <Col md={3} xs={12} className="no-pad h-center video-box">
+                <video 
+                    className="gif"
+                    autoPlay="true" 
+                    loop="true"
+                    muted="true"
+                    src={this.props.link}
+                />
+            
         </Col>  
     );
   }
