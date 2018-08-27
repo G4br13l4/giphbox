@@ -45,7 +45,7 @@ class App extends Component {
     return (
       <Grid fluid>
         <Row className="h-center" id="navbar">
-          <Col md={2} xs={12} className="no-pad">
+          <Col md={2} xs={12}>
             <header>
               <video 
                 autoPlay="true" 
@@ -57,14 +57,14 @@ class App extends Component {
             </header>
           </Col>
           <SearchBar showGifs={this.showGifs}/>
-          <Col md={1}>
+          <Col md={1} xs={3}>
             <img onClick={this.getTrendy} src="./assets/trending.png"/>
           </Col>
         </Row>
         
         <Row className="h-center">
-          <Col md={11} xs={12}>
-            <Row id="gif-container">
+          <Col md={10} xs={12}>
+            <Row id="gifs-row">
             {this.state.show}
             </Row>
           </Col>        

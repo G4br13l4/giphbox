@@ -36,7 +36,7 @@ class SearchBar extends Component {
 
     render() {
     return (
-        <Col md={7} id="search-bar">
+        <Col md={7} xs={12} id="search-bar">
             <form>
                 <FormGroup>
                     <FormControl value={this.state.words} onChange={this.handleChange} type="text" placeholder="Write something" />
