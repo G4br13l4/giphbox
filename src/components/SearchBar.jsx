@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import GifM from './GifM';
+import Gif from './Gif';
 import {Col, FormGroup, FormControl, Button} from 'react-bootstrap';
 
 class SearchBar extends Component {

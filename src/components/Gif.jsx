@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Col} from 'react-bootstrap';
 
-class GifM extends Component {
+class Gif extends Component {
     render() {
     return (
         <Col md={3} xs={12} className="h-center video-box">
@@ -17,4 +17,4 @@ class GifM extends Component {
   }
 }
 
-export default GifM;
+export default Gif;

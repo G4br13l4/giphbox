@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import {Grid,Row,Col} from 'react-bootstrap';
-import GifM from './components/GifM';
+import Gif from './components/Gif';
 import SearchBar from './components/SearchBar';
 
 class App extends Component {
@@ -31,7 +31,7 @@ class App extends Component {
   showGifs(data){
     let gifs = data.data.map(function(gif,index) {
         return (
-          <GifM 
+          <Gif 
             poster={gif.images['480w_still'].url}
             link={gif.images.original.mp4}
           />
