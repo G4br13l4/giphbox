@@ -29,7 +29,6 @@ class App extends Component {
   }
 
   showGifs(data){
-
     let gifs = data.data.map(function(gif,index) {
         return (
           <GifM 
