@@ -63,7 +63,7 @@ class App extends Component {
         
         <Row className="h-center">
           <Col md={10} xs={12}>
-            <Row id="gifs-row">
+            <Row>
             {this.state.show}
             </Row>
           </Col>        

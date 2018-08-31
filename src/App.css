@@ -42,7 +42,6 @@ h2{
 .btn:hover{
   background:#ff0080 ;
   color: rgb(245, 171, 171);
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
   box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;  
 }
 
@@ -64,25 +63,10 @@ img {
 }
 
 /* Gifs */
-#gifs-row{
-  height: 40vh;
-  width: 100%;
-}
+.video-box{height: 40vh}
 
-.video-box{
-  height: 100%;
-}
-
-.video-box > video{
-  object-fit: fill;
-  object-position: 50% 50%;
-  flex: 1;
-  overflow: hidden;
-  height: 100%;
-}
+.video-box > video{object-fit: fill}
 
 @media only screen and (max-width: 600px) {
-  .video-box > video{
-    margin-left:9%;
-  }
+  .video-box{height:auto}
 }
