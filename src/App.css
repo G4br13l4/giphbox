@@ -8,8 +8,11 @@
   font-family: 'Poppins', sans-serif;
 }
 
-[class*="col-"] {
+[class*="col-"],
+.row,
+.container-fluid{
   padding: 0;
+  margin:0;
 }
 
 .h-center {
@@ -33,13 +36,13 @@ h2{
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
 }
 
-.btn {
+#search-btn{
   background:#ff0080 ;
   color: #fff;
   width:50%;
 }
 
-.btn:hover{
+#search-btn:hover{
   background:#ff0080 ;
   color: rgb(245, 171, 171);
   box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;  

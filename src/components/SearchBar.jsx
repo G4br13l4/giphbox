@@ -41,7 +41,7 @@ class SearchBar extends Component {
                 <FormGroup>
                     <FormControl value={this.state.words} onChange={this.handleChange} type="text" placeholder="Write something" />
                 </FormGroup>
-                <Button onClick={this.handleSubmit} type="submit">Search GIFs!!</Button>
+                <Button onClick={this.handleSubmit} id="search-btn" type="submit">Search GIFs!!</Button>
             </form>
         </Col>
     );

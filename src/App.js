@@ -48,7 +48,8 @@ class App extends Component {
             <header>
               <video 
                 autoPlay="true" 
-                loop="true" 
+                loop="true"
+                poster="https://media.giphy.com/media/26FeUQtvzuhdfxOE0/giphy.gif"
                 src="https://media.giphy.com/media/26FeUQtvzuhdfxOE0/giphy.mp4"
                 alt="logo" 
               />
